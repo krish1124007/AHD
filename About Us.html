@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://th.bing.com/th/id/R.d535806e3a63bf056d5a3dc774f0ad7e?rik=tPoKi3uQuh%2bz4w&riu=http%3a%2f%2f1.bp.blogspot.com%2f-YSgyu-H_e9M%2fUihe4QhS1dI%2fAAAAAAAAABg%2fZOk7aJFKBL0%2fs1600%2fmedical_logo_red_white.png&ehk=keEO4wgNyUkptj8LxhBpM%2fYyTGHxDjKYzGGuwzMAQzE%3d&risl=&pid=ImgRaw&r=0" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=Inter:wght@900&family=Open+Sans:wght@700&family=Roboto:ital,wght@0,400;0,700;0,900;1,700;1,900&family=Teko:wght@300&display=swap"
+    rel="stylesheet">
+  <title>About Us</title>
+
+  <style>
+    #ADHLogo {
+      text-align: center;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f8f8f8;
+      color: #000000;
+      text-align: center;
+      padding: 20px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .about-section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #000000;
+    }
+
+    .team-member {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .team-member img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    footer {
+      background-color: #b91717;
+      color: #fff;
+      text-align: center;
+      padding: 2px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* style for phone view */
+    .starting {
+      background-color: teal;
+
+      width: 1300px;
+      height: 2000px;
+      z-index: 1;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      /* display: none; */
+      animation-name: krish;
+      animation-duration: 3s;
+      animation-iteration-count: 1;
+      /* opacity: 0; */
+    }
+
+    @keyframes krish {
+      0% {
+        display: block;
+        background-color: teal;
+        opacity: 1;
+      }
+
+      25% {
+        display: block;
+        background-color: rgb(129, 205, 205);
+        opacity: 1;
+      }
+
+      50% {
+        display: block;
+        background-color: chocolate;
+        opacity: 1;
+      }
+
+      75% {
+        display: block;
+        background-color: coral;
+        opacity: 1;
+      }
+
+      100% {
+        display: block;
+        background-color: black;
+        opacity: 0.9;
+
+      }
+
+    }
+
+    .starting h1 {
+      position: relative;
+      top: 200px;
+      left: 70px;
+      font-size: 50px;
+
+    }
+
+    .s1 {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-family: 'Open Sans', sans-serif;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Teko', sans-serif;
+      animation: s1;
+      animation-duration: 3s;
+      animation-iteration-count: 1;
+      position: relative;
+      left: 35%;
+      font-size: 100px;
+    }
+
+    @keyframes s1 {
+      0% {
+        opacity: 0;
+      }
+
+      /* 20%{
+                opacity: 1;
+            } */
+    }
+
+    .s2 {
+      animation: s2;
+      animation-duration: 3s;
+      animation-iteration-count: 1;
+      position: relative;
+      left: 35%;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-family: 'Open Sans', sans-serif;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Teko', sans-serif;
+      font-size: 100px;
+    }
+
+    @keyframes s2 {
+      0% {
+        opacity: 0;
+      }
+
+      20% {
+        opacity: 0;
+      }
+
+    }
+
+    .s3 {
+      animation: s3;
+      animation-duration: 3s;
+      animation-iteration-count: 1;
+      position: relative;
+      left: 35%;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-family: 'Open Sans', sans-serif;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Teko', sans-serif;
+      font-size: 100px;
+    }
+
+    @keyframes s3 {
+      0% {
+        opacity: 0;
+      }
+
+      20% {
+        opacity: 0;
+      }
+
+      30% {
+        opacity: 0;
+      }
+
+    }
+
+    .s4 {
+      animation: s4;
+      animation-duration: 3s;
+      animation-iteration-count: 1;
+    }
+
+    @keyframes s4 {
+      0% {
+        opacity: 0;
+      }
+
+      20% {
+        opacity: 0;
+      }
+
+      30% {
+        opacity: 0;
+      }
+
+      40% {
+        opacity: 0;
+      }
+
+    }
+
+    .s5 {
+      animation: s5;
+      animation-duration: 3s;
+      animation-iteration-count: 1;
+    }
+
+    @keyframes s5 {
+      0% {
+        opacity: 0;
+      }
+
+      20% {
+        opacity: 0;
+      }
+
+      30% {
+        opacity: 0;
+      }
+
+      40% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 0;
+      }
+
+    }
+
+
+    .s6 {
+      animation: s5;
+      animation-duration: 3s;
+      animation-iteration-count: 1;
+    }
+
+    @keyframes s5 {
+      0% {
+        opacity: 0;
+      }
+
+      20% {
+        opacity: 0;
+      }
+
+      30% {
+        opacity: 0;
+      }
+
+      40% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 0;
+      }
+
+      60% {
+        opacity: 0;
+      }
+
+    }
+
+
+
+    #i1 {
+      width: 47px;
+      height: 47px;
+    }
+
+    .container-fluid {
+      /* border: 2px solid brown; */
+      padding: 0px;
+      margin: 0px;
+      background-image: linear-gradient(rgb(185, 53, 53), rgb(188, 59, 42), rgb(200, 29, 29));
+
+    }
+
+    .navbar {
+      background-image: linear-gradient(rgb(181, 52, 58), rgb(198 19 0), rgb(197, 40, 40));
+      width: 100%;
+
+    }
+
+    nav .container-fluid .nav-link {
+      color: rgb(0, 0, 0);
+    }
+
+    .btn {
+      border: 1px solid white;
+      color: white;
+    }
+
+
+    .nav-link .nev-item {
+      background-image: linear-gradient(rgb(127, 7, 7), rgb(198, 19, 0), rgb(143, 8, 8));
+
+    }
+
+    #iad {
+      width: 100%;
+
+    }
+
+    nav .container-fluid .nav-link {
+      color: rgb(252 252 252);
+    }
+
+    #i12 {
+      width: 30px;
+    }
+
+
+    @media all and (max-width:600px) {
+      * {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: 'Inter', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Teko', sans-serif;
+      }
+
+      .s3 {
+        animation: s3;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        position: relative;
+        left: 60px;
+        font-size: 100px;
+      }
+
+      .s2 {
+        animation: s2;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        position: relative;
+        left: 60px;
+        font-size: 100px;
+      }
+
+      .s1 {
+        animation: s1;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        position: relative;
+        left: 60px;
+        font-size: 100px;
+      }
+
+
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img
+          src="https://th.bing.com/th/id/R.d535806e3a63bf056d5a3dc774f0ad7e?rik=tPoKi3uQuh%2bz4w&riu=http%3a%2f%2f1.bp.blogspot.com%2f-YSgyu-H_e9M%2fUihe4QhS1dI%2fAAAAAAAAABg%2fZOk7aJFKBL0%2fs1600%2fmedical_logo_red_white.png&ehk=keEO4wgNyUkptj8LxhBpM%2fYyTGHxDjKYzGGuwzMAQzE%3d&risl=&pid=ImgRaw&r=0"
+          alt="Error" id="i1"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Tut.html">Tutorials</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="resourceallocation.html">Resource Allocation</a></li>
+              <li><a class="dropdown-item" href="Medicine Stock Management.html">Medicine Management</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="Worspace2.htm"> Workforce Management</a></li>
+            </ul>
+          </li>
+          <!-- <li class="nav-item">
+                  <a class="nav-link disabled" href=""  style="color: black;" >contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="" style="color: black;">About us</a>
+                </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Other
+
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="contacts.html">Contact us</a></li>
+              <li><a class="dropdown-item" href="About Us.html">About us</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+
+            </ul>
+          </li>
+        </ul>
+        <!-- <p class="p1" >Your Advanced Healthcare Solutions Provider</p> -->
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <h1>About Us</h1>
+  </header>
+  <main>
+    <section class="about-section">
+      <div id="ADHLogo">
+        <img src="WhatsApp Image 2023-10-29 at 17.28.28.jpeg" alt="ADH Logo" id="iad">
+      </div>
+      <h2 id="align">Our Mission</h2>
+      <p>ADH wants everyone to be happy and healthy in every situation. And this initiative is just a beginning for it.
+        A initiative for healthy future.</p>
+    </section>
+    <section class="about-section">
+      <h2>Our Team</h2>
+      <div class="team-member">
+        <img src="sanatani coder.jpeg" alt="Person 1">
+        <h3>Sanatani Coders</h3>
+        <p>We make Difference.</p>
+      </div>
+      <div class="team-member">
+        <img src="https://imgur.com/a/bgnqzO1" alt="Team">
+        <h3>The Team</h3>
+        <p>Sanatanis!!</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="starting">
+    <h1><span class="s1">A</span><span class="s2">H</span><span class="s3">D</span>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 YourCompany. All rights reserved.</p>
+    <span><img id="i12"
+        src="https://www.freepnglogos.com/uploads/instagram-icon-png/instagram-app-icon-instagram-logos-brand-17.png"
+        alt=""></span>
+
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+  integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script>
+  window.chatbaseConfig = {
+    chatbotId: "NzyAOomDU4KKosZpz2cMl",
+  }
+</script>
+<script src="https://www.chatbase.co/embed.min.js" id="NzyAOomDU4KKosZpz2cMl" defer>
+</script>
+<script>
+  setTimeout(function () {
+    var elements = document.querySelectorAll(".starting");
+    elements.forEach(function (element) {
+      element.style.display = 'none';
+    });
+  }, 3000);
+
+</script>
+
+</html>
